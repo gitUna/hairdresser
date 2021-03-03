@@ -1,0 +1,310 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </head>
+
+  <body>
+    <div class="sticky"><div class="sticky__button"></div></div>
+
+    <section class="header every-section">
+      <div class="header__main">
+        <div class="sss">
+          <div>
+            <span class="name">Justyna Pawlowska</span>
+            <h1>Hairdesigner</h1>
+          </div>
+          <!-- <div class="additionalScissors"></div> -->
+        </div>
+        <div class="with-scissors">
+          <div class="sci"></div>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nosdivud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Quis nosdivud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nosdivud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+      </div>
+      <!-- <div class="header__separator"></div> -->
+
+      <div class="nav">
+        <div class="logo">
+          <img src="img/logo1.png" />
+          <img src="img/logo2.png" />
+          <img src="img/logo.png" />
+        </div>
+        <div class="nav__social">
+          <div id="facebook" class="nav__social--item"></div>
+          <div id="twitter" class="nav__social--item"></div>
+          <div id="instagram" class="nav__social--item"></div>
+        </div>
+
+        <ul class="menu">
+          <li class="menu--item menu--item1">About</li>
+          <li class="menu--item menu--item2">Hairstyle Gallery</li>
+          <li class="menu--item menu--item3">My services</li>
+          <li class="menu--item menu--item4">Make an appointment</li>
+          <li class="menu--item menu--item5">Contact</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="gallery section every-section">
+      <h1 class="main-title">Hairstyle Gallery</h1>
+
+      <div class="gallery__container">
+        <div class="gallery__mini">
+          <div class="gallery__mini--photo">
+            <img src="img/sq1.jpg" alt="" />
+          </div>
+          <div class="gallery__mini--photo">
+            <img src="img/sq2.jpg" alt="" />
+          </div>
+          <div class="gallery__mini--photo">
+            <img src="img/sq3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="gallery__slide--section">
+          <div class="gallery__slide--1 slide">
+            <img src="img/sq1.jpg" alt="" />
+          </div>
+          <div class="gallery__slide--2 slide">
+            <img src="img/sq2.jpg" alt="" />
+          </div>
+          <div class="gallery__slide--3 slide">
+            <img src="img/sq3.jpg" alt="" />
+          </div>
+          <div class="gallery__slide--3 slide">
+            <img src="img/sq4.jpg" alt="" />
+          </div>
+          <div class="gallery__slide--3 slide">
+            <img src="img/sq5.jpg" alt="" />
+          </div>
+          <div class="gallery__slide--3 slide">
+            <img src="img/sq6.jpg" alt="" />
+          </div>
+          <div class="gallery__btn">
+            <button class="gallery__btn--both gallery__btn--left"></button>
+            <button class="gallery__btn--both gallery__btn--right"></button>
+          </div>
+        </div>
+        <div class="gallery__mini">
+          <div class="gallery__mini--photo">
+            <img src="img/sq4.jpg" alt="" />
+          </div>
+          <div class="gallery__mini--photo">
+            <img src="img/sq5.jpg" alt="" />
+          </div>
+          <div class="gallery__mini--photo">
+            <img src="img/sq6.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service section every-section">
+      <h1 class="main-title lista-uslug">Servicess I offer</h1>
+      <div class="services">
+        <div class="services__box services__box--s1">
+          <div class="services__box--img services__box--s1--img"></div>
+          <div class="services__box--text">
+            <h2>Hair Curling</h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam
+            </p>
+          </div>
+        </div>
+        <div class="services__box services__box--s2">
+          <div class="services__box--img services__box--s2--img"></div>
+          <div class="services__box--text">
+            <h2>Hair Styling</h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis
+            </p>
+          </div>
+        </div>
+        <div class="services__box services__box--s3">
+          <div class="services__box--img services__box--s3--img"></div>
+          <div class="services__box--text">
+            <h2>Cutting</h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium eaque ipsa quae ab illo inventore veritatis et quasi
+              architecto
+            </p>
+          </div>
+        </div>
+        <div class="services__box services__box--s4">
+          <div class="services__box--img services__box--s4--img"></div>
+          <div class="services__box--text">
+            <h2>Hair Coloring</h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto
+            </p>
+          </div>
+        </div>
+        <div class="services__box services__box--s5">
+          <div class="services__box--img services__box--s5--img"></div>
+          <div class="services__box--text">
+            <h2>Pin Ups</h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto
+            </p>
+          </div>
+        </div>
+        <div class="services__box services__box--s6">
+          <div class="services__box--img services__box--s6--img"></div>
+          <div class="services__box--text">
+            <h2>Hair Straightening</h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form section every-section">
+      <h1 class="main-title">Make an appointment</h1>
+      <form class="form1">
+        <div class="hair-length">
+          <h1>Choose your hair length</h1>
+          <div class="hair-length--container">
+            <a id="length1" class="length">Long</a>
+            <a id="length2" class="length">Semi-long</a>
+            <a id="length3" class="length">Short</a>
+          </div>
+        </div>
+
+        <div class="m">
+          <h1 class="m-h1">Select services</h1>
+          <div class="option">
+            <label id="div1">
+              Straightening
+              <input type="checkbox" id="service1" class="service" />
+              <span class="checkmark"></span>
+            </label>
+            <div id="price1" data-index-number="30">30.00$</div>
+            <div>
+              <textarea class="remarks">Additional remarks</textarea>
+            </div>
+          </div>
+          <div class="option">
+            <label id="div2">
+              Hair Curling
+              <input type="checkbox" id="service2" class="service" />
+              <span class="checkmark"></span>
+            </label>
+            <div id="price2" data-index-number="50">50.00$</div>
+            <div><textarea class="remarks">Additional remarks</textarea></div>
+          </div>
+          <div class="option">
+            <label id="div3">
+              Hair Styling
+              <input type="checkbox" id="service3" class="service" />
+              <span class="checkmark"></span>
+            </label>
+            <div id="price3" data-index-number="40">40.00$</div>
+            <div><textarea class="remarks">Additional remarks</textarea></div>
+          </div>
+
+          <div class="option">
+            <label id="div4">
+              Cutting
+              <input type="checkbox" id="service4" class="service" />
+              <span class="checkmark"></span>
+            </label>
+            <div id="price4" data-index-number="10">10.00$</div>
+            <div><textarea class="remarks">Additional remarks</textarea></div>
+          </div>
+
+          <div class="option">
+            <label id="div5">
+              Hair coloring
+              <input type="checkbox" id="service5" class="service" />
+              <span class="checkmark"></span>
+            </label>
+            <div id="price5" data-index-number="20">20.00$</div>
+            <div><textarea class="remarks">Additional remarks</textarea></div>
+          </div>
+        </div>
+        <div class="order">
+          <div class="sum"><h2>Price: 0$</h2></div>
+          <h3>Chosen services:</h3>
+          <div class="chosenServices"></div>
+
+          <button>Make an appointment</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="contact section every-section">
+      <h1 class="main-title">
+        Contact me
+      </h1>
+      <div class="contact-info">
+        <div id="map"></div>
+        <div class="contact-info1">
+          <div class="info1">
+            <h2>Address info</h2>
+            <p>Lorem ipsum sit dolor amet</p>
+            <p>phone 0008 888 443 526</p>
+            <p>e-mail: hdsfgdhsf@xjvbhdbg.com</p>
+          </div>
+          <div class="info2">
+            <h2>Additional</h2>
+            <p>Lorem ipsum sit dolor amet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+   
+      <div>
+        <img src="img/atelier1.png" />
+        <img src="img/atelier1.png" />
+
+        <img src="img/atelier.png" />
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
