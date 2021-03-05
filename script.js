@@ -8,7 +8,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 L.marker([51.05421481772432, 16.965332333963264])
   .addTo(map)
-  .bindPopup("Justyna Pawlowska Hair Salon")
+  .bindPopup("Anastazja Strain Hair Salon")
   .openPopup();
 
 let arrayN = [];
@@ -90,6 +90,17 @@ const removeDefText = function () {
   );
 };
 removeDefText();
+
+let tab = [];
+const rem = document.querySelectorAll(".rem");
+
+if (window.innerWidth <= 600) {
+  rem.forEach((r) => {
+    r.classList.add("remarks");
+    r.style.padding = "0";
+  });
+}
+
 //Section menu
 
 const menu = document.querySelector(".menu");
@@ -102,28 +113,28 @@ const form = document.querySelector(".form");
 const contact = document.querySelector(".contact");
 
 //Sticky nav
-const sectionObserver = new IntersectionObserver(
-  function (entries) {
-    const [entry] = entries;
-    if (window.innerWidth <= 1380) {
-      sticky.classList.remove("hidden");
-      sticky.style.display = "flex";
-    } else {
-      if (entry.isIntersecting) {
-        sticky.classList.add("hidden");
-        sticky.style.display = "none";
-      } else {
-        sticky.classList.remove("hidden");
-        sticky.style.display = "flex";
-      }
-    }
-  },
-  {
-    root: null,
-    threshold: 0.3,
-  }
-);
-sectionObserver.observe(header);
+// const sectionObserver = new IntersectionObserver(
+//   function (entries) {
+//     const [entry] = entries;
+//     if (window.innerWidth <= 1380) {
+//       sticky.classList.remove("hidden");
+//       sticky.style.display = "flex";
+//     } else {
+//       if (entry.isIntersecting) {
+//         sticky.classList.add("hidden");
+//         sticky.style.display = "none";
+//       } else {
+//         sticky.classList.remove("hidden");
+//         sticky.style.display = "flex";
+//       }
+//     }
+//   },
+//   {
+//     root: null,
+//     threshold: 0.3,
+//   }
+// );
+// sectionObserver.observe(header);
 const nav = document.querySelector(".nav");
 const scissors = document.querySelector(".additionalScissors");
 
@@ -134,7 +145,7 @@ const footer = document.querySelector("footer");
 
 const menuCopy = menu.cloneNode(true);
 const menuCopy1 = menu.cloneNode(true);
-menuCopy1.classList.add('menuCopy1');
+menuCopy1.classList.add("menuCopy1");
 
 menuCopy.classList.add("menuCopy");
 menuCopy.classList.add("hidden");
