@@ -70,63 +70,94 @@ h5 {
   font-family: "Julius Sans One", sans-serif;
 }
 .every-section {
-  padding: 2vh 10vw 6vh;
+  padding: 2vh 10vw 10vw;
   width: 100%;
 }
 .main-title {
   text-align: center;
   padding: 2rem 2rem;
   font-size: 4rem;
-  margin: 0rem 0rem 8rem;
-  border-bottom: 10px solid #fff;
-  border-radius: 50%;
+  margin: 0rem 0rem 0rem;
 }
 
+.clip {
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-bottom:8rem;
+}
+.sci {
+  display: none;
+}
 /* HEADER */
 
 .logo {
+  width: 100%;
   text-align: center;
   margin-bottom: 2rem;
+  // background-color: #fff;
 
   & * {
-    width: 20%;
-    height: 20%;
+    width: 24%;
+    height: 24%;
   }
 }
 .header {
   @include flexSettings(row, flex-start, center, nowrap);
-  background-color: $light;
+  background-color: $medium;
   background-image: url(img/pattern.png);
   background-repeat: no-repeat;
-  // padding-top: 10rem;
-  // padding-bottom: 6rem;
-  padding: 10rem;
+  padding: 10rem 15rem;
+  color:$light;
+
+
 
   .header__main {
-    width: 70%;
-    padding: 2rem 4rem 2rem;
-    background-color: rgba($color: $light, $alpha: 0.8);
-    border: 10px solid $medium;
-    border-radius: 20px;
-    // margin-left:20rem;
+    width: 100%;
+text-align: center;
+    padding: 0rem 4rem 2rem;
 
-    * {
-      margin-bottom: 2rem;
+
+    & .clip{
+      margin-bottom: 0;
+      margin:5vw 0;
     }
     .name {
+      color: #fff;
       font-family: "Julius Sans One", sans-serif;
       font-weight: bold;
-      font-size: 6vw;
+      font-size: 8vw;
+padding:0 !important;
+margin: 0 !important ;
+      
+      // color:$dark;
     }
     h1 {
-      margin-top: 1rem;
-      font-size: 2rem;
-      color: $grey;
-    }
+      font-family: 'Lato';
+      font-weight: 400;
+      text-transform: uppercase;
 
+      // margin-bottom: 5rem;
+      font-size: 1.7rem;
+      background-color: $light;
+   
+      color: $dark;
+      padding:2rem;
+      border-radius: 5px;
+    }
+.h1-first{
+  @include flexSettings(row, flex-start, space-between, wrap);
+color:$medium;
+font-style: italic;
+
+*{
+  margin: 0 1rem;
+}
+}
     :nth-child(2),
     :last-child {
-      margin-left: 1rem;
+      // margin-bottom:4rem;
     }
   }
 
@@ -140,13 +171,15 @@ h5 {
   .nav {
     @include flexSettings(column, center, center, nowrap);
     margin-top: 5%;
-    width: 30%;
-    color: $light;
+    width: 0%;
+    color: $dark;
     font-size: 1.7rem;
+    align-self: flex-start;
+
 
     .menu {
       border-radius: 20px;
-      background-color: $medium;
+      background-color: $light;
       padding: 2rem;
       box-shadow: 5px 5px $dark;
       text-align: center;
@@ -164,13 +197,18 @@ h5 {
       }
     }
     .nav__social {
-      margin-bottom: 3rem;
+      margin-top: 3rem;
       left: 0;
+      background-color: $light;
+     padding:1rem 2rem;
+     border-radius: 20px;
 
       &--item {
         @include bgSettings(cover, center);
-        height: 4rem;
-        width: 4rem;
+        height: 5rem;
+        width: 5rem;
+        
+        border-radius: 50%;
         display: inline-block;
         overflow: hidden;
         margin: 0.5rem 0.2rem 1rem;
@@ -203,8 +241,15 @@ h5 {
   }
 }
 .description {
-  border-radius: 20px;
-  padding: 1rem 1rem;
+  color:$light;
+// font-style: italic;
+      font-size: 1.7rem;
+      // background-color: $light;
+      // width: 80%;
+      margin:0 auto;
+      // border:10px solid $light;
+      padding:2rem ;
+      border-radius: 20px;
 }
 .with-scissors {
   display: flex;
@@ -229,8 +274,8 @@ h5 {
 
     &--both {
       @include bgSettings(contain, center);
-      height: 3rem;
-      width: 3rem * 2;
+      height: 40px;
+      width: 60px;
       background-color: transparent;
       border: transparent;
       cursor: pointer;
@@ -338,8 +383,8 @@ h5 {
   width: 70px;
   height: 70px;
   border-radius: 20px;
-  border: 2px solid $medium;
-  transition: 1s;
+
+  transition: 0.5s;
   box-shadow: 4px 4px $medium;
 
   &:hover {
@@ -351,7 +396,7 @@ h5 {
   list-style-type: none;
   padding: 2rem;
   background-color: #fff;
-  box-shadow: 5px 5px;
+  box-shadow: 5px 5px $medium;
   border-radius: 20px;
 
   .menu--item:hover {
@@ -378,13 +423,14 @@ h5 {
 .form {
   display: block;
   padding: 4rem 12rem 5rem;
-  & .main-title {
-    border-bottom: 10px solid $dark;
+
+  & .clip {
+    background-color: $medium;
   }
 }
 .form1 {
   @include flexSettings(row, stretch, flex-start, nowrap);
-  padding: 0 6rem;
+  padding-bottom: 10vw;
 }
 
 .hair-length {
@@ -544,6 +590,7 @@ table {
       margin-bottom: 1rem;
       margin-left: 15px;
       height: 5rem;
+      width: 100%;
     }
   }
 
@@ -606,7 +653,7 @@ table {
   @include flexSettings(row, stretch, space-between, nowrap);
 }
 .contact-info1 {
-  @include flexSettings(column, stretch, space-between, nowrap);
+  @include flexSettings(column, stretch, flex-start, nowrap);
   width: 30%;
   margin: 1rem 2rem;
 
@@ -656,7 +703,7 @@ table {
 footer {
   @include flexSettings(row, center, space-between, nowrap);
   height: auto;
-  background-color: $green;
+  background-color: $medium;
   padding: 4rem 18rem;
 
   & h3,
@@ -705,31 +752,58 @@ footer {
   height: 100px;
   margin-left: 50%;
 }
-.sss {
-  display: flex;
-  padding-top: 3rem;
-}
 
 /// MEDIA
 
+@media only screen and (max-width: 600px) {
+  textarea {
+    margin: 0 !important;
+  }
+  label {
+    width: 50% !important;
+  }
+  .m-h1{
+    text-align: center;
+    font-size:2.5rem !important;
+  }
+
+}
+
 @media only screen and (max-width: 1380px) {
+
+  .gallery__btn--both {
+    width: 40px;
+    height: 20px;
+  }
   .sticky {
     display: auto;
   }
   .every-section {
     height: auto;
-    padding: 2vh 2rem 6vh;
+    padding: 2vw 2rem 8vh;
   }
-
+  .sci {
+    display: none;
+  }
+  .description {
+    padding: 0;
+  }
   .header {
     @include flexSettings(column, flex-start, left, wrap);
+    padding: 6rem;
+    
 
     & .header__main {
+      border: none;
+      // background-color: rgba($color: $, $alpha: 0.8);
       width: 100%;
-      padding-top: 0rem;
+      // padding-top: 0rem;
+
+ 
 
       & .name {
-        font-size: 4rem;
+        font-size: 6rem;
+       
       }
     }
 
@@ -759,15 +833,23 @@ footer {
 
   .main-title {
     font-size: 3.6rem;
+    margin-bottom: 0rem;
   }
   .form1 {
     display: block;
   }
+  .clip{
+    margin-bottom: 4rem;
+  }
+
   .form {
     background-color: $medium;
+
+    & .clip{
+      background-color: #fff;
+    }
     & .main-title {
       color: $light;
-      border-bottom: 10px solid #fff;
     }
 
     & .hair-length {
@@ -784,11 +866,13 @@ footer {
         }
       }
       & h1 {
+        margin:3rem;
         text-align: center;
         background-color: #fff;
         color: $dark;
         padding: 2rem;
         border-radius: 15px;
+        font-size:2.2rem;
       }
     }
 
@@ -820,7 +904,7 @@ footer {
     }
   }
 
-  //grey CLASSES
+  //ADDITIONAL CLASSES
   .active-button {
     padding: 1.8rem;
     max-width: 190px;
@@ -852,26 +936,64 @@ footer {
   }
 }
 @media only screen and (min-width: 1000px) {
-  .header {
-    @include flexSettings(row, center, space-between, nowrap);
-    // padding: 4rem !important;
-  }
-  .header__main {
-    width: 70% !important;
-  }
+
+
+
+
   & .nav {
     width: 30% !important;
     padding: 0 !important;
     margin-top: 0 !important;
   }
 }
+
+.logo-hidden {
+  display: none;
+  * {
+    height: 100px;
+    margin: 0 2rem;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .logo-hidden {
+    display: none !important;
+    * {
+    }
+  }
+}
 @media only screen and (max-width: 840px) {
+
+  .h1-first{
+display:none !important;
+  
+    }
+  .header .header__main h1{
+    font-size:1.4rem;
+  }
+  .clip{
+  
+    height: 5px;
+  }
   .header {
     padding: 2rem !important;
+   
   }
   .header__main {
     margin: 0;
     padding: 1rem !important;
+    background-color: rgba($color: #000000, $alpha: 0) !important;
+  }
+  .logo-hidden {
+    display: block;
+  }
+  .main-title {
+    border-bottom: none;
+  }
+
+  .form {
+    & .main-title {
+      border-bottom: none;
+    }
   }
 
   .sci {
@@ -884,7 +1006,9 @@ footer {
     margin: 0;
   }
   .services__box--img {
-    display: none;
+    // display: none;
+    width: 70%;
+    height: 200px;
   }
   .form {
     padding: 2rem 0;
